@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe", 
+    "postalCode": "12345",
+    "category": "valid"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "postalCode": "SW1A 1AA", 
+    "category": "international"
+  },
+  {
+    "firstName": "Christopher",
+    "lastName": "Washington",
+    "postalCode": "90210",
+    "category": "longName"
+  },
+  {
+    "firstName": "A",
+    "lastName": "B",
+    "postalCode": "1",
+    "category": "boundary"
+  },
+  {
+    "firstName": "VeryLongFirstNameThatExceedsNormalLimits",
+    "lastName": "VeryLongLastNameThatExceedsNormalLimits", 
+    "postalCode": "123456789012345",
+    "category": "boundary"
+  }
+]

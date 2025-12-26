@@ -1,0 +1,32 @@
+# Java
+/target/
+/out/
+/bin/
+*.class
+*.log
+
+# Maven
+/logs/
+/.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python (if needed)
+venv/
+__pycache__/
+*.pyc
