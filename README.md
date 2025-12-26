@@ -70,7 +70,19 @@ See [Configuration Guide](docs/CONFIGURATION.md) for detailed setup.
 ## Reports
 - Cucumber HTML reports: `target/cucumber-reports/`
 - TestNG reports: `target/surefire-reports/`
+
+## Screenshots in Reports
+This framework automatically captures browser screenshots for every scenario—both on pass and fail.
+
+Screenshots are saved as PNG files in the screenshots directory, named after the scenario and its status.
+Screenshots are also embedded directly in the Cucumber HTML report for easy viewing and debugging.
+How to use:
+
+After running your tests, open the Cucumber HTML report in your browser to view embedded screenshots.
+For direct access, browse the screenshots directory for individual PNG files.
+
 [View Latest Cucumber Report](docs/last-cucumber-report.html)
+To view the formatted report, download the file and open it locally in your browser, or use the GitHub Pages link if available.
 
 ## License
 
