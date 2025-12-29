@@ -1,11 +1,25 @@
 package com.ecommerce.steps;
 
+import org.testng.Assert;
+
 import com.ecommerce.config.ConfigManager;
 import com.ecommerce.config.DriverManager;
 import com.ecommerce.pages.HomePage;
-import io.cucumber.java.en.*;
-import org.testng.Assert;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+/**
+ * Step definitions for smoke test scenarios in the e-commerce application.
+ *
+ * This class contains Cucumber steps for:
+ * - Verifying basic application functionality
+ * - Ensuring critical workflows (such as login, navigation, and checkout) work as expected
+ * - Providing fast feedback on application health
+ *
+ * These steps are used in feature files to automate and validate smoke test cases.
+ */
 public class SmokeSteps {
     private HomePage homePage;
     
