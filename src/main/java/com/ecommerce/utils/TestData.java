@@ -32,13 +32,4 @@ public class TestData {
         public static final String RED_TSHIRT = "test.allthethings()-t-shirt-(red)";
     }
     
-    public static class Shipping {
-        public static final String FIRST_NAME = "John";
-        public static final String LAST_NAME = "Doe";
-        public static final String POSTAL_CODE = "12345";
-        public static final String COUNTRY = "United States";
-        public static final String ADDRESS = "123 Test Street";
-        public static final String CITY = "Test City";
-        public static final String STATE = "Test State";
-    }
 }

@@ -13,6 +13,15 @@ import com.ecommerce.config.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 
+/**
+ * Cucumber hooks for test setup and teardown.
+ *
+ * This class manages actions that should occur before and after each scenario,
+ * such as initializing and quitting the WebDriver, and capturing screenshots
+ * for both passed and failed scenarios.
+ *
+ * Screenshots are attached to the Cucumber report and saved as files for debugging.
+ */
 public class Hooks {
 
     private final WebDriver driver;
@@ -21,6 +30,9 @@ public class Hooks {
         this.driver = DriverManager.getDriver(); // Adjust to your driver management
     }
 
+    /**
+     * @param scenario
+     */
     @After
     public void takeScreenshot(Scenario scenario) {
         if (driver instanceof TakesScreenshot) {

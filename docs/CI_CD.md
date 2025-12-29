@@ -168,3 +168,23 @@ mvn test -Denv=staging
 # Production
 mvn test -Denv=prod -Dcucumber.filter.tags="@smoke"
 ```
+```mermaid
+flowchart TD
+    CICD["CI/CD Pipeline<br/>(GitHub Actions/Jenkins)"]
+    Feature["Feature Files<br/>(Gherkin)"]
+    Steps["Step Definitions"]
+    Pages["Page Objects"]
+    Runner["Test Runner<br/>(JUnit/TestNG)"]
+    Selenium["Selenium WebDriver"]
+    AUT["Application Under Test"]
+
+    CICD -->|Triggers tests| Runner
+    CICD --> Feature
+    CICD --> Steps
+    CICD --> Pages
+    Feature -->|Defines scenarios| Steps
+    Steps -->|Uses| Pages
+    Steps -->|Controls browser| Selenium
+    Pages -->|Uses WebDriver| Selenium
+    Runner -->|Executes| Steps
+    Selenium -->|Interacts with| AUT

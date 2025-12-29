@@ -8,6 +8,16 @@ import com.ecommerce.config.DriverManager;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+/**
+ * Main Cucumber test runner for the e-commerce automation framework.
+ *
+ * This class configures and launches Cucumber tests using the specified options,
+ * such as feature file locations, step definition packages, and report plugins.
+ *
+ * Usage:
+ * - Executes all scenarios defined in the feature files.
+ * - Generates HTML and JSON reports after test execution.
+ */
 @CucumberOptions(
     features = "src/test/resources/features",
     glue = "com.ecommerce.steps",
