@@ -5,6 +5,17 @@ import com.ecommerce.pages.HomePage;
 import io.cucumber.java.en.*;
 import org.testng.Assert;
 
+/**
+ * Step definitions for cart functionality in the e-commerce application.
+ *
+ * This class contains Cucumber steps for:
+ * - Adding items to the cart
+ * - Removing items from the cart
+ * - Viewing cart contents
+ * - Validating cart totals and item details
+ *
+ * These steps are used in feature files to automate and verify cart-related scenarios.
+ */
 public class CartSteps {
     private HomePage homePage;
     

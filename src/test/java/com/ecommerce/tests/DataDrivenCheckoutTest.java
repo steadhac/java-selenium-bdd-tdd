@@ -13,9 +13,6 @@ import org.testng.annotations.*;
 /**
  * Data-driven tests for checkout functionality.
  * Uses TestNG DataProvider for multiple shipping address scenarios.
- * 
- * @author QA Team
- * @version 1.0
  */
 public class DataDrivenCheckoutTest {
     

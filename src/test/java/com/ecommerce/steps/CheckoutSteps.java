@@ -18,9 +18,6 @@ import org.testng.Assert;
  * - Navigate through checkout process
  * - Fill shipping information
  * - Complete order and verify confirmation
- * 
- * @author QA Team
- * @version 1.0
  */
 public class CheckoutSteps {
     private HomePage homePage;
