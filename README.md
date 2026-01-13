@@ -2,8 +2,6 @@
 
 Enterprise-grade test automation framework with BDD and TDD support.
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/java-selenium-bdd-tdd/ci.yml?branch=main)](https://github.com/your-username/java-selenium-bdd-tdd/actions)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/your-username/java-selenium-bdd-tdd/actions)
 [![License](https://img.shields.io/github/license/your-username/java-selenium-bdd-tdd)](LICENSE)
 [![Java](https://img.shields.io/badge/java-11%2B-blue)](https://adoptopenjdk.net/)
 [![Selenium](https://img.shields.io/badge/selenium-4.x-brightgreen)](https://www.selenium.dev/)
@@ -17,11 +15,11 @@ Enterprise-grade test automation framework with BDD and TDD support.
 flowchart TD
     A[User] -->|Interacts| B[Web Browser]
     B -->|Automated by| C[Selenium WebDriver]
-    C --> D[Test Runner (JUnit/Cucumber)]
+    C --> D[TestRunner JUnit/Cucumber]
     D --> E[Test Reports]
     D --> F[Page Objects]
     F -->|Interacts with| G[Application Under Test]
-```    
+```
 ## Features
 
 - **Selenium WebDriver**  
